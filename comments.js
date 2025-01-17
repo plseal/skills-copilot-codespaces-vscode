@@ -1,15 +1,15 @@
-// Cteate web server
-// 1. include http module
-var http = require('http');
-// 2. create server
-http.createServer(function(req, res){
-    // 3. set response header
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    // 4. set response body
-    res.write('<h1>Web Server</hjson>');
-    // 5. end response
-    res.end();
-}).listen(3000);
-
-console.log('Server is running at http://localhost:3000');
-// 6. run server
+// Cteate web server   
+// 1. Load the express module
+const express = require('express');
+// 2. Create an express application
+const app = express();
+// 3. Create a route for GET request to /comments
+app.get('/comments', (req, res) => {
+    res.send('This is a page of comments');
+});
+// 4. Send a response with some comments
+// 5. Start the server on port 3000
+// 6. Test the server using a web browser
+app.listen(3000, () => {
+    console.log('Server started on http://localhost:3000');
+});
