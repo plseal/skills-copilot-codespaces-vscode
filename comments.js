@@ -1,4 +1,4 @@
-// Cteate web server   
+// Create web server   
 // 1. Load the express module
 const express = require('express');
 // 2. Create an express application
