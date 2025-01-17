@@ -1,4 +1,4 @@
-// cteate web server
+// Cteate web server
 // 1. include http module
 var http = require('http');
 // 2. create server
